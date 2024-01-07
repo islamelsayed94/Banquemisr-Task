@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+/* Add your styling here */
+body{
+    padding: 0;
+    margin: 0;
+}
+.currency-form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .currency-form-container label {
+    margin-bottom: 8px;
+  }
+
+  .currency-form-container input,
+  .currency-form-container select {
+    margin-bottom: 16px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .currency-form-container button {
+    background-color: #871e35;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .currency-form-container button:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .currency-form-container button:hover {
+    background-color: #871e35;
+  }
+
+  .currency-form-container button:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    cursor: not-allowed;
+  }
+
+  .currency-form-container .button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .currency-form-container p {
+    margin-top: 16px;
+    font-size: 18px;
+  }
