@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #871e35;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  header .logo a img {
+    height: 40px; /* Adjust the height as needed */
+  }
+
+  header nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }

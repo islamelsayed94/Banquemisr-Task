@@ -1,0 +1,46 @@
+<article class="container">
+
+
+
+    <div>
+        <h2>Details Page</h2>
+        <p>From Currency: {{ fromCurrency }} : ({{ fromCurrencyFullName }})</p>
+        <p>To Currency: {{ toCurrency }} : ({{ toCurrencyFullName }})</p>
+    </div>
+
+
+
+    <!--*********-->
+    <div *ngIf="historicalData">
+        <h2>Historical Exchange Rates</h2>
+        <p>
+            From {{ fromCurrencyFullName }} ({{ fromCurrency }}) to {{ toCurrencyFullName }} ({{ toCurrency }})
+        </p>
+
+        <ul>
+            <li *ngFor="let rate of historicalData.rates | keyvalue">
+                {{ rate.key }}: {{ rate.value }}
+            </li>
+        </ul>
+
+    </div>
+
+    <div *ngIf="fromToList.length">
+        <h3>Conversion List (FROM to Others)</h3>
+        <ul>
+            <li *ngFor="let item of fromToList">
+                {{ fromCurrency }} to {{ item.currency }}: {{ item.value | number:'1.2-2' }}
+            </li>
+        </ul>
+    </div>
+
+    <!-- Conversion List (Others to FROM) -->
+    <div *ngIf="toFromList.length">
+        <h3>Conversion List (Others to FROM)</h3>
+        <ul>
+            <li *ngFor="let item of toFromList">
+                {{ item.currency }} to {{ fromCurrency }}: {{ item.value | number:'1.2-2' }}
+            </li>
+        </ul>
+    </div>
+</article>

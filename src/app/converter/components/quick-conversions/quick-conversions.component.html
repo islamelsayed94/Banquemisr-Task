@@ -1,0 +1,17 @@
+<div *ngIf="conversions.length > 0" class="conversion-table">
+    <h3>{{ direction === 'quick' ? 'Quick Conversions' : 'Reverse Quick Conversions' }}</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Amount</th>
+          <th>Converted Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let conversion of conversions">
+          <td>{{ conversion.amount }}</td>
+          <td>{{ conversion.result | number: '1.2-2' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

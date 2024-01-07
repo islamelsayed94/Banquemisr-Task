@@ -1,0 +1,42 @@
+/* details.component.css */
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+}
+div {
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  color: #871e35;
+}
+
+p, li {
+  color: #000; /* Set the text color to black */
+}
+
+ul {
+  list-style-type: none; /* Remove bullets from the list */
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Optional: Add some spacing and background color to the lists */
+ul {
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+/* Optional: Add border-radius for a rounded look */
+div, ul {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
